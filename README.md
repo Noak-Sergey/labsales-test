@@ -1,4 +1,5 @@
 # labsales-test
+https://noak-sergey.github.io/labsales-test/
 
 Тестовое задание на позицию Frontend-разработчик/Верстальщик
 Сверстайте тестовую страницу:
