@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+	
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="icon" type="image/png" sizes="148x79" href="./img/favicon.png">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+		crossorigin=""/>
+		<link  rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<title>ЖК Яблоновский</title>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<main class="page">
+				<header class="header">
+						<div class="header__top">
+							<div class="header__logo"><img src="img/logos/header-logo.png" alt="Строитель"></div>
+							<div class="header__logo2"><img src="img/logos/header-logo2.png" alt="Строитель"></div>
+							<div class="header__logo-burger"><img src="img/logos/logo-inverse.png" alt="Строитель"></div>
+							<nav class="header__top-menu menu">
+								<div class="menu__body">
+									<ul class="menu__list">
+										<li><a href="#" class="menu__link">Жилые комплексы</a></li>
+										<li><a href="#" class="menu__link">O компании</a></li>
+										<li><a href="#" class="menu__link">Как купить</a></li>
+										<li><a href="#" class="menu__link">Контакты</a></li>
+									</ul>
+								</div>	
+								
+							</nav>	
+							<div class="header__phone">
+								<span>+7 (918) 377-48-10</span>
+								<a href="#">Заказать звонок</a>
+							</div>
+							<h2>Меню</h2>
+							<div class="burger-menu">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<div class="header__bottom">
+							<nav class="header__bottom-menu menu">
+								<div class="menu__body">
+									<ul class="menu__list">
+										<li><a href="#" class="menu__link">Преимущества</a></li>
+										<li><a href="#" class="menu__link">Инфраструктура</a></li>
+										<li><a href="#" class="menu__link">Планировка</a></li>
+										<li><a href="#" class="menu__link">Отделка</a></li>
+										<li><a href="#" class="menu__link">Описание</a></li>
+										<li><a href="#" class="menu__link">Контакты</a></li>
+										<li><a href="#" class="menu__link">Документация</a></li>
+									</ul>
+								</div>
+							</nav>	
+						</div>
+						<div class="path">
+							<span class="path__text">Главная / Жилые комплексы / <b>Яблоновский</b></span>  
+						</div>
+						<div class="main-menu main-menu_hidden">
+							<div class="container">
+								<div class="acor-container">          
+					
+									<input type="checkbox" name="chacor" id="complex"  />
+									<label class="menu-first" for="complex">Жилые комплексы</label>
+									<div class="acor-body">
+									   
+											<input type="checkbox" name="chacor" id="kosmos"  />
+											<label class="menu-second" for="kosmos">ЖК Космос</label>
+											<div class="acor-body">
+												<a class="menu-item" href="">Преимущества</a>
+												<a class="menu-item" href="">Инфраструктура</a>
+												<a class="menu-item" href="">Планировка</a>
+												<a class="menu-item" href="">Отделка</a>
+												<a class="menu-item" href="">Описание</a>
+												<a class="menu-item" href="">Контакты</a>
+												<a class="menu-item" href="">Документация</a>
+											</div>
+											<input type="checkbox" name="chacor" id="yablonovsky"   />
+											<label class="menu-second" for="yablonovsky">ЖК Яблоновский</label>
+											<div class="acor-body">
+												<a class="menu-item" href="">Преимущества</a>
+												<a class="menu-item" href="">Инфраструктура</a>
+												<a class="menu-item" href="">Планировка</a>
+												<a class="menu-item" href="">Отделка</a>
+												<a class="menu-item" href="">Описание</a>
+												<a class="menu-item" href="">Контакты</a>
+												<a class="menu-item" href="">Документация</a>
+											</div>
+										
+									</div>
+									
+									<input type="checkbox" name="chacor" id="about" />
+									<label class="menu-first" for="about">О компании</label>
+									<div class="acor-body">
+										<p  class="menu-item">Наши проекты</p>
+										<p  class="menu-item">Документы</p>
+										<p  class="menu-item">Лицензии</p>
+										<p  class="menu-item">Разрешения</p>
+									</div>
+									
+									<input type="checkbox" name="chacor" id="bye" />
+									<label class="menu-first" for="bye">Как купить</label>
+									<div class="acor-body">
+										<a class="menu-item" href="#">Ипотека</a>
+										<a class="menu-item" href="#">Военная ипотека</a>
+										<a class="menu-item" href="#">Материнский капитал</a>
+										<a class="menu-item" href="#">Наличный рассчет</a>
+										<a class="menu-item" href="#">Рассрочка</a>
+									</div>
+									<label class="menu-first">Контакты</label>
+									<div class="contacts_sm">
+										<span class="menu-phone">+7 (918) 377-48-10</span>
+										<button class="callme">Заказать звонок</button>
+									</div>
+								</div>
+							</div>
+						</div>
+				</header>
+				<div class="main-screen">
+					<div class="main-screen__bg">
+						<img src="img/kobcevoi.png" alt="kobcevoi street">
+					</div>
+					<div class="main-screen__blur-top"></div>
+					<div class="main-screen__blur-bottom"></div>
+					<div class="main-screen__left">
+						<img src="img/cloud-left.png" alt="cloud">
+					</div>
+					<div class="main-screen__right">
+						<img src="img/cloud-right.png" alt="cloud">
+					</div>
+				</div>
+				<div class="main-block">
+					<div class="main-block__container">
+						<div class="main-block__body">
+							<h1 class="main-block__title">Жилой Комплекс <span>«Яблоновский»</span></h1>
+							<div class="main-block__adress">Краснодар, пгт. Яблоновский ул. Кобцевой</div>
+							<div class="main-block__price">от 63 801 до 65 678 ₽/м²</div>
+							<div class="main-block__button">Узнать стоимость проекта</div>
+						</div>
+						<div class="main-block__info">
+							<div class="main-block__cards">
+								<div class="main-block__card card">
+									<div class="card__body">
+										<h3 class="card__title">Квартиры</h3>
+										<div class="card__price">от 63 801 ₽/м²</div>
+									</div>
+								</div>
+								<div class="main-block__card card">
+									<div class="card__body">
+										<h3 class="card__title">Стоимость</h3>
+										<div class="card__price">от 4,44 млн ₽</div>
+									</div>
+								</div>
+								<div class="main-block__card card">
+									<div class="card__body">
+										<h3 class="card__title">Класс</h3>
+										<div class="card__price">Эконом</div>
+									</div>
+								</div>
+								<div class="main-block__card card">
+									<div class="card__body">
+										<h3 class="card__title">Срок сдачи</h3>
+										<div class="card__price">Сдан</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="about">
+					<div class="container aboutSwiper">
+						<div class="about__cards">
+							<div class="about__columns">
+								<div class="about__card ">
+									<div class="about__icon">
+										<img src="img/icons/keys.png" alt="keys">
+									</div>
+									<div class="about__column">
+										<h3 class="about__title">Срок сдачи</h3>
+										<div class="about__text">2015</div>
+									</div>
+								</div>
+								<div class="about__card ">
+									<div class="about__icon">
+										<img src="img/icons/buildings1.png" alt="buildings">
+									</div>
+									<div class="about__column">
+										<h3 class="about__title">Корпусов</h3>
+										<div class="about__text">2 корпуса</div>
+									</div>
+								</div>
+							</div>
+							<div class="about__columns">
+								<div class="about__card ">
+									<div class="about__icon">
+										<img src="img/icons/office-building.png" alt="office-building">
+									</div>
+									<div class="about__column">
+										<h3 class="about__title">Этажность</h3>
+										<div class="about__text">10</div>
+									</div>
+								</div>
+								<div class="about__card ">
+									<div class="about__icon">
+										<img src="img/icons/parking.png" alt="parking">
+									</div>
+									<div class="about__column">
+										<h3 class="about__title">Парковка</h3>
+										<div class="about__text">Гостевая</div>
+									</div>
+								</div>
+							</div>
+							<div class="about__columns">
+								<div class="about__card ">
+									<div class="about__icon">
+										<img src="img/icons/brickwall.png" alt="brickwall">
+									</div>
+									<div class="about__column">
+										<h3 class="about__title">Тип дома</h3>
+										<div class="about__text">Кирпичный</div>
+									</div>
+								</div>
+								<div class="about__card ">
+									<div class="about__icon">
+										<img src="img/icons/child-place.png" alt="child-place">
+									</div>
+									<div class="about__column">
+										<h3 class="about__title">Территория</h3>
+										<div class="about__text">Дет.площадки</div>
+									</div>
+								</div>
+							</div>
+							<div class="about__columns">
+								<div class="about__card ">
+									<div class="about__icon">
+										<img src="img/icons/star.png" alt="star">
+									</div>
+									<div class="about__column">
+										<h3 class="about__title">Класс дома</h3>
+										<div class="about__text">Эконом</div>
+									</div>
+								</div>
+								<div class="about__card ">
+									<div class="about__icon">
+										<img src="img/icons/putty-knife.png" alt="putty-knife">
+									</div>
+									<div class="about__column">
+										<h3 class="about__title">Отделка</h3>
+										<div class="about__text">Чистовая</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="about-pagination"></div>
+					</div>
+				</section>
+				<section class="infrastructure">
+					<h2 class="infrastructure__title">Наша инфраструктура</h2>
+					<div id="mapid">
+						<div class="inf-swiper">
+							<div class="inf-navigation-group">
+								<div class="btn-navigation inf-prev"></div>
+								<div class="btn-navigation inf-next"></div>
+							</div>
+							<div class="layers">
+								<div class="item">
+									<button type="button" class="item__btn" data-layer="shopGroup">
+										<img class="item__icon" src="img/map-icons/shop.svg" alt="location">
+										<span class="item__title">Магазины</span>  
+									</button>
+								</div>
+								<div class="item">
+									<button type="button" class="item__btn item__btn_active" data-layer="locationGroup">
+										<img class="item__icon" src="img/map-icons/location.svg" alt="location">
+										<span class="item__title">ЖК “Яблоновский”</span>  
+									</button>
+								</div>
+								<div class="item">
+									<button type="button" class="item__btn" data-layer="daycareGroup">
+										<img class="item__icon" src="img/map-icons/daycare.svg" alt="location">
+										<span class="item__title">Детский сад</span>  
+									</button>
+								</div>
+								<div class="item">
+									<button type="button" class="item__btn" data-layer="azsGroup">
+										<img class="item__icon" src="img/map-icons/azs.svg" alt="location">
+										<span class="item__title">АЗС</span>  
+									</button>
+								</div>
+								<div class="item">
+									<button type="button" class="item__btn" data-layer="hospitalGroup">
+										<img class="item__icon" src="img/map-icons/hospital.svg" alt="location">
+										<span class="item__title">Поликлинника</span>  
+									</button>
+								</div>
+								<div class="item">
+									<button type="button" class="item__btn" data-layer="hospitalGroup">
+										<img class="item__icon" src="img/map-icons/pull.svg" alt="location">
+										<span class="item__title">Аквапарк</span>  
+									</button>
+								</div>
+								<div class="item">
+									<button type="button" class="item__btn" data-layer="hospitalGroup">
+										<img class="item__icon" src="img/map-icons/pull.svg" alt="location">
+										<span class="item__title">Банк</span>  
+									</button>
+								</div>
+							</div>
+						</div>    
+					</div>
+				</section>
+				<section class="descriptionGk">
+					<div class="container">
+						<h2 class="descriptionGk__subtitle">Описание Жилого Комплекса</h2>
+						<p class="descriptionGk__paragraph">Нажимайте < > чтобы подробно ознакомится с проектом</p>
+						<div class="swiper swiper-description">
+							
+							<div class="pagination"></div>
+
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+							<!-- Slides -->
+								<div class="swiper-slide">
+									
+									<div class="swiper-content">
+										
+										<div class="information">
+											<img src="img/photos/desc1.webp" alt="Территория">
+											<div class="info-item">
+												<div class="info-item__header">
+													<h4 class="info-item__title">Парковка</h4>
+													<div class="navigation-group">
+														<div class="btn-navigation btn-prev"></div>
+														<div class="btn-navigation btn-next"></div>
+													</div>
+												</div>
+												<p class="info-item__text">
+													Жилой комплекс "Яблоновский" расположен на ул. Кобцевой Н.С. 
+													в пгт. Яблоновский. За пять минут пешком можно дойти до
+													муниципальной поликлиники, школы и детского садика.
+													<br><br><span class="info-item__text_hidden">
+														Этот жилой комплекс располагается в непосредственной близости от улицы Гагарина, где проходит абсолютное большинство маршрутов общественного транспорта, соответственно легко добраться во все части поселка и города Краснодар. Тут же располагается магазин «Магнит», «Магнит Косметик», МФЦ, овощной рынок, мебельные магазины, аптеки и другие предприятия сферы услуг.
+														</span>
+												</p>
+											</div>
+										</div>
+										<div class="photos">
+											<img src="img/photos/desc2.webp" alt="Территория">
+											<img src="img/photos/desc3.webp" alt="Территория">
+											<img src="img/photos/desc4.webp" alt="Территория">
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									
+									<div class="swiper-content">
+										
+										<div class="information">
+											<img src="img/photos/desc1.webp" alt="Территория">
+											<div class="info-item">
+												<div class="info-item__header">
+													<h4 class="info-item__title">Архитектура</h4>
+													<div class="navigation-group">
+														<div class="btn-navigation btn-prev"></div>
+														<div class="btn-navigation btn-next"></div>
+													</div>
+												</div>
+												<p class="info-item__text">
+													Жилой комплекс "Яблоновский" расположен на ул. Кобцевой Н.С. 
+													в пгт. Яблоновский. За пять минут пешком можно дойти до
+													муниципальной поликлиники, школы и детского садика.
+													<br><br><span class="info-item__text_hidden">
+														Этот жилой комплекс располагается в непосредственной близости от улицы Гагарина, где проходит абсолютное большинство маршрутов общественного транспорта, соответственно легко добраться во все части поселка и города Краснодар. Тут же располагается магазин «Магнит», «Магнит Косметик», МФЦ, овощной рынок, мебельные магазины, аптеки и другие предприятия сферы услуг.
+														</span>
+												</p>
+											</div>
+										</div>
+										<div class="photos">
+											<img src="img/photos/desc2.webp" alt="Территория">
+											<img src="img/photos/desc3.webp" alt="Территория">
+											<img src="img/photos/desc4.webp" alt="Территория">
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									
+									<div class="swiper-content">
+										
+										<div class="information">
+											<img src="img/photos/desc1.webp" alt="Территория">
+											<div class="info-item">
+												<div class="info-item__header">
+													<h4 class="info-item__title">Охрана</h4>
+													<div class="navigation-group">
+														<div class="btn-navigation btn-prev"></div>
+														<div class="btn-navigation btn-next"></div>
+													</div>
+												</div>
+												<p class="info-item__text">
+													Жилой комплекс "Яблоновский" расположен на ул. Кобцевой Н.С. 
+													в пгт. Яблоновский. За пять минут пешком можно дойти до
+													муниципальной поликлиники, школы и детского садика.
+													<br><br><span class="info-item__text_hidden">
+													Этот жилой комплекс располагается в непосредственной близости от улицы Гагарина, где проходит абсолютное большинство маршрутов общественного транспорта, соответственно легко добраться во все части поселка и города Краснодар. Тут же располагается магазин «Магнит», «Магнит Косметик», МФЦ, овощной рынок, мебельные магазины, аптеки и другие предприятия сферы услуг.
+													</span>
+												</p>
+											</div>
+										</div>
+										<div class="photos">
+											<img src="img/photos/desc2.webp" alt="Территория">
+											<img src="img/photos/desc3.webp" alt="Территория">
+											<img src="img/photos/desc4.webp" alt="Территория">
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									
+									<div class="swiper-content">
+										
+										<div class="information">
+											<img src="img/photos/desc1.webp" alt="Территория">
+											<div class="info-item">
+												<div class="info-item__header">
+													<h4 class="info-item__title">Территория</h4>
+													<div class="navigation-group">
+														<div class="btn-navigation btn-prev"></div>
+														<div class="btn-navigation btn-next"></div>
+													</div>
+												</div>
+												<p class="info-item__text">
+													Жилой комплекс "Яблоновский" расположен на ул. Кобцевой Н.С. 
+													в пгт. Яблоновский. За пять минут пешком можно дойти до
+													муниципальной поликлиники, школы и детского садика.
+													<br><br>
+													Этот жилой комплекс располагается в непосредственной близости от улицы Гагарина, где проходит абсолютное большинство маршрутов общественного транспорта, соответственно легко добраться во все части поселка и города Краснодар. Тут же располагается магазин «Магнит», «Магнит Косметик», МФЦ, овощной рынок, мебельные магазины, аптеки и другие предприятия сферы услуг.
+												</p>
+											</div>
+										</div>
+										<div class="photos">
+											<img src="img/photos/desc2.webp" alt="Территория">
+											<img src="img/photos/desc3.webp" alt="Территория">
+											<img src="img/photos/desc4.webp" alt="Территория">
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</section>
+				<footer class="footer">
+					<div class="container">
+						<h2 class="footer__title">Узнайте о выгодных предложениях и получите личную консультацию</h2>
+						<div class="footer__wrapper">
+							<div class="footer__phone phone">
+								<h3 class="phone__title">По любым возникающим Вами вопросов звоните нам напрямую</h3>
+								<div class="phone__row">
+									<div class="phone__call">
+										<img src="img/icons/phone-call.png" alt="phone-call" class="phone__icon">
+									</div>
+									<div class="phone__number">+7 (918) 377-48-10</div>
+								</div>
+							</div>
+							<div class="footer__fillForm fillForm">
+								<div class="fillForm__text">Или заполните форму</div>
+								<div class="fillForm__column">
+									<p>Сейчас мы работаем</p>
+									<form class="fillForm__form form" action="submit">
+										<div class="form__inputWrap">
+											<input type="text" placeholder="Ваше имя">
+										</div>
+										<div class="form__inputWrap">
+											<input type="number" placeholder="Ваш номер телефона">
+										</div>
+										<div class="form__inputWrap">
+											<input type="email" placeholder="Ваш emeil">
+										</div>
+										<div class="form__wrapBtn">
+											<button class="form__btn">Отправить заявку</button>
+										</div>	
+									</form>
+									<div class="fillForm__checkbox checkbox">
+										<label class="checkbox__container">
+											<input type="checkbox">
+											<!-- <span class="checkmark"></span> -->
+										</label>
+										<div class="checkbox__text">
+											Я принимаю условия <span>обработки персональных данных</span>
+										</div>	 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</main>
+		</div>	
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin=""></script>
+    <script src="js/map.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/script.js" ></script>
+	</body>
+</html>
